@@ -135,6 +135,25 @@ class Character extends FlxSprite
 				addOffset("singDOWN", 2, -32);
 
 				playAnim('idle');
+				
+			case 'finn':
+				// DAD ANIMATION LOADING CODE
+				frames = Paths.getSparrowAtlas("adventure/images/finn");
+				animation.addByPrefix('idle', 'dance', 24, false);
+				animation.addByPrefix('singUP', 'UP', 24);
+				animation.addByPrefix('singRIGHT', 'RIGHT', 24);
+				animation.addByPrefix('singDOWN', 'DOWN', 24);
+				animation.addByPrefix('singLEFT', 'LEFT', 24);
+				animation.addByPrefix('singLEFT-alt', 'attack', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -9, 50);
+				addOffset("singRIGHT", -4, 26);
+				addOffset("singLEFT", -11, 10);
+				addOffset("singDOWN", 2, -32);
+				addOffset("singLEFT-alt", 2, -32);
+
+				playAnim('idle');
 			case 'spooky':
 				frames = Paths.getSparrowAtlas("spooky_kids_assets");
 				animation.addByPrefix('singUP', 'spooky UP NOTE', 24, false);

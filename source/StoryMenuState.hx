@@ -59,6 +59,7 @@ class StoryMenuState extends MusicBeatState
 			['Satin-Panties', "High", "Milf"],
 			['Cocoa', 'Eggnog', 'Winter-Horrorland'],
 			['Senpai', 'Roses', 'Thorns']
+			['no-hero'],
 		];
 		
 		weekCharacters = [
@@ -69,6 +70,7 @@ class StoryMenuState extends MusicBeatState
 			['mom', 'bf', 'gf'],
 			['parents-christmas', 'bf', 'gf'],
 			['senpai', 'bf', 'gf']
+			['dad', 'bf', 'gf']
 		];
 	
 		weekNames = CoolUtil.coolTextFile(Paths.text("weekNames"));

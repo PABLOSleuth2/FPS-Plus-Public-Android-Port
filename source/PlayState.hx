@@ -88,6 +88,8 @@ class PlayState extends MusicBeatState
 	public static final schoolScared = ["roses"];
 	public static final evilSchoolSongs = ["thorns"];
 	public static final pixelSongs = ["senpai", "roses", "thorns"];
+	public static final placeSongs =
+	  ["no-hero"];
 
 	private var camFocus:String = "";
 	private var camTween:FlxTween;
@@ -626,6 +628,16 @@ class PlayState extends MusicBeatState
 			bg.scrollFactor.set(0.9, 0.9);
 			bg.active = false;
 			add(bg);
+			
+			defaultCamZoom = 0.9;
+			curStage = 'place';
+			var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image("place"));
+			// bg.setGraphicSize(Std.int(bg.width * 2.5));
+			// bg.updateHitbox();
+			bg.antialiasing = true;
+			bg.scrollFactor.set(0.9, 0.9);
+			bg.active = false;
+			add(bg);
 
 			var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image("stagefront"));
 			stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
@@ -668,6 +680,9 @@ class PlayState extends MusicBeatState
 				bfBeats = [0, 1, 2, 3];
 			case "thorns":
 				dadBeats = [0, 1, 2, 3];
+			case "no-hero":
+			  dadBeats = [0, 1, 2, 3];
+				bfBeats = [0, 1, 2, 3];
 		}
 
 		var gfVersion:String = 'gf';
