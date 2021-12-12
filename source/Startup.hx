@@ -31,6 +31,7 @@ class Startup extends FlxState
                                 "Satin-Panties", "High", "Milf", 
                                 "Cocoa", "Eggnog", "Winter-Horrorland", 
                                 "Senpai", "Roses", "Thorns",
+                                "No-hero", "lol", "cant open",
                                 "klaskiiLoop", "freakyMenu"]; //Start of the non-gameplay songs.
                                 
     //List of character graphics and some other stuff.
@@ -41,7 +42,7 @@ class Startup extends FlxState
                                     "DADDY_DEAREST", "spooky_kids_assets", "Monster_Assets",
                                     "Pico_FNF_assetss", "Mom_Assets", "momCar",
                                     "christmas/mom_dad_christmas_assets", "christmas/monsterChristmas",
-                                    "weeb/senpai", "weeb/spirit", "weeb/senpaiCrazy"];
+                                    "weeb/senpai", "weeb/spirit", "weeb/senpaiCrazy", "adventure/images/finn"];
 
     var graphicsCached:Bool;
     var graphics:Array<String> =    ["logoBumpin", "titleBG", "gfDanceTitle", "titleEnter",
@@ -52,7 +53,7 @@ class Startup extends FlxState
                                     "christmas/bgWalls", "christmas/upperBop", "christmas/bgEscalator", "christmas/christmasTree", "christmas/bottomBop", "christmas/fgSnow", "christmas/santa",
                                     "christmas/evilBG", "christmas/evilTree", "christmas/evilSnow",
                                     "weeb/weebSky", "weeb/weebSchool", "weeb/weebStreet", "weeb/weebTreesBack", "weeb/weebTrees", "weeb/petals", "weeb/bgFreaks",
-                                    "weeb/animatedEvilSchool"];
+                                    "weeb/animatedEvilSchool", "place"];
 
     var cacheStart:Bool = false;
 

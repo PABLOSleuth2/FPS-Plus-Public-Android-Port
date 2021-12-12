@@ -23,6 +23,7 @@ class HealthIcon extends FlxSprite
 		loadGraphic(Paths.image('iconGrid'), true, 150, 150);
 			
 		animation.add('bf', [0, 1, 30], 0, false, isPlayer);
+		animation.add('finn', [2, 3, 4], 0, false, isPlayer);
 		animation.add('bf-car', [0, 1, 30], 0, false, isPlayer);
 		animation.add('bf-christmas', [0, 1, 30], 0, false, isPlayer);
 		animation.add('bf-pixel', [21, 41, 40], 0, false, isPlayer);
