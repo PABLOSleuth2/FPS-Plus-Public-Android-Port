@@ -90,6 +90,10 @@ class DialogueBox extends FlxSpriteGroup
 				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
 				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
 				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+			case 'no-hero':
+				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
+				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
+				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);	
 			case 'roses':
 				FlxG.sound.play(Paths.sound('ANGRY_TEXT_BOX'));
 
